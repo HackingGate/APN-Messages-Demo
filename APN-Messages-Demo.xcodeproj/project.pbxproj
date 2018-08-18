@@ -1,0 +1,371 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		767AA5B62127E3830069FBA4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767AA5B52127E3830069FBA4 /* AppDelegate.swift */; };
+		767AA5B82127E3830069FBA4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767AA5B72127E3830069FBA4 /* ViewController.swift */; };
+		767AA5BB2127E3830069FBA4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 767AA5B92127E3830069FBA4 /* Main.storyboard */; };
+		767AA5BD2127E3840069FBA4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 767AA5BC2127E3840069FBA4 /* Assets.xcassets */; };
+		767AA5C02127E3840069FBA4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 767AA5BE2127E3840069FBA4 /* LaunchScreen.storyboard */; };
+		767AA5CA2127E43F0069FBA4 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 767AA5C92127E43F0069FBA4 /* CloudKit.framework */; };
+		769A49C62127E5B200D3BA11 /* APNExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 769A49C52127E5B200D3BA11 /* APNExtension.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		767AA5B22127E3830069FBA4 /* APN-Messages-Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "APN-Messages-Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		767AA5B52127E3830069FBA4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		767AA5B72127E3830069FBA4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		767AA5BA2127E3830069FBA4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		767AA5BC2127E3840069FBA4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		767AA5BF2127E3840069FBA4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		767AA5C12127E3840069FBA4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		767AA5C72127E3CA0069FBA4 /* APN-Messages-Demo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "APN-Messages-Demo.entitlements"; sourceTree = "<group>"; };
+		767AA5C92127E43F0069FBA4 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		769A49C52127E5B200D3BA11 /* APNExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APNExtension.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		767AA5AF2127E3830069FBA4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				767AA5CA2127E43F0069FBA4 /* CloudKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		767AA5A92127E3830069FBA4 = {
+			isa = PBXGroup;
+			children = (
+				767AA5B42127E3830069FBA4 /* APN-Messages-Demo */,
+				767AA5B32127E3830069FBA4 /* Products */,
+				767AA5C82127E43F0069FBA4 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		767AA5B32127E3830069FBA4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				767AA5B22127E3830069FBA4 /* APN-Messages-Demo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		767AA5B42127E3830069FBA4 /* APN-Messages-Demo */ = {
+			isa = PBXGroup;
+			children = (
+				767AA5C72127E3CA0069FBA4 /* APN-Messages-Demo.entitlements */,
+				767AA5B52127E3830069FBA4 /* AppDelegate.swift */,
+				769A49C52127E5B200D3BA11 /* APNExtension.swift */,
+				767AA5B72127E3830069FBA4 /* ViewController.swift */,
+				767AA5B92127E3830069FBA4 /* Main.storyboard */,
+				767AA5BC2127E3840069FBA4 /* Assets.xcassets */,
+				767AA5BE2127E3840069FBA4 /* LaunchScreen.storyboard */,
+				767AA5C12127E3840069FBA4 /* Info.plist */,
+			);
+			path = "APN-Messages-Demo";
+			sourceTree = "<group>";
+		};
+		767AA5C82127E43F0069FBA4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				767AA5C92127E43F0069FBA4 /* CloudKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		767AA5B12127E3830069FBA4 /* APN-Messages-Demo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 767AA5C42127E3840069FBA4 /* Build configuration list for PBXNativeTarget "APN-Messages-Demo" */;
+			buildPhases = (
+				767AA5AE2127E3830069FBA4 /* Sources */,
+				767AA5AF2127E3830069FBA4 /* Frameworks */,
+				767AA5B02127E3830069FBA4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "APN-Messages-Demo";
+			productName = "APN-Messages-Demo";
+			productReference = 767AA5B22127E3830069FBA4 /* APN-Messages-Demo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		767AA5AA2127E3830069FBA4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = HackingGate;
+				TargetAttributes = {
+					767AA5B12127E3830069FBA4 = {
+						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1000;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+							com.apple.iCloud = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 767AA5AD2127E3830069FBA4 /* Build configuration list for PBXProject "APN-Messages-Demo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 767AA5A92127E3830069FBA4;
+			productRefGroup = 767AA5B32127E3830069FBA4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				767AA5B12127E3830069FBA4 /* APN-Messages-Demo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		767AA5B02127E3830069FBA4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				767AA5C02127E3840069FBA4 /* LaunchScreen.storyboard in Resources */,
+				767AA5BD2127E3840069FBA4 /* Assets.xcassets in Resources */,
+				767AA5BB2127E3830069FBA4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		767AA5AE2127E3830069FBA4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				767AA5B82127E3830069FBA4 /* ViewController.swift in Sources */,
+				767AA5B62127E3830069FBA4 /* AppDelegate.swift in Sources */,
+				769A49C62127E5B200D3BA11 /* APNExtension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		767AA5B92127E3830069FBA4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				767AA5BA2127E3830069FBA4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		767AA5BE2127E3840069FBA4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				767AA5BF2127E3840069FBA4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		767AA5C22127E3840069FBA4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		767AA5C32127E3840069FBA4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		767AA5C52127E3840069FBA4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "APN-Messages-Demo/APN-Messages-Demo.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 77CB32R5F4;
+				INFOPLIST_FILE = "APN-Messages-Demo/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hackinggate.APN-Messages-Demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		767AA5C62127E3840069FBA4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "APN-Messages-Demo/APN-Messages-Demo.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 77CB32R5F4;
+				INFOPLIST_FILE = "APN-Messages-Demo/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hackinggate.APN-Messages-Demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		767AA5AD2127E3830069FBA4 /* Build configuration list for PBXProject "APN-Messages-Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				767AA5C22127E3840069FBA4 /* Debug */,
+				767AA5C32127E3840069FBA4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		767AA5C42127E3840069FBA4 /* Build configuration list for PBXNativeTarget "APN-Messages-Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				767AA5C52127E3840069FBA4 /* Debug */,
+				767AA5C62127E3840069FBA4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 767AA5AA2127E3830069FBA4 /* Project object */;
+}
