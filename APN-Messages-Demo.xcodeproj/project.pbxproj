@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2AA28CA3A6F860C1974DF0A2 /* Pods_APN_Messages_Demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2370C4A558FFB9D279F37B5 /* Pods_APN_Messages_Demo.framework */; };
 		767AA5B62127E3830069FBA4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767AA5B52127E3830069FBA4 /* AppDelegate.swift */; };
 		767AA5B82127E3830069FBA4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767AA5B72127E3830069FBA4 /* ViewController.swift */; };
 		767AA5BB2127E3830069FBA4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 767AA5B92127E3830069FBA4 /* Main.storyboard */; };
@@ -27,6 +28,9 @@
 		767AA5C72127E3CA0069FBA4 /* APN-Messages-Demo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "APN-Messages-Demo.entitlements"; sourceTree = "<group>"; };
 		767AA5C92127E43F0069FBA4 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		769A49C52127E5B200D3BA11 /* APNExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APNExtension.swift; sourceTree = "<group>"; };
+		A2370C4A558FFB9D279F37B5 /* Pods_APN_Messages_Demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_APN_Messages_Demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BDE2080E372E10F4F335FDF7 /* Pods-APN-Messages-Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-APN-Messages-Demo.release.xcconfig"; path = "Pods/Target Support Files/Pods-APN-Messages-Demo/Pods-APN-Messages-Demo.release.xcconfig"; sourceTree = "<group>"; };
+		C9C3F0C01A1937F57EABE58E /* Pods-APN-Messages-Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-APN-Messages-Demo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-APN-Messages-Demo/Pods-APN-Messages-Demo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,18 +39,29 @@
 			buildActionMask = 2147483647;
 			files = (
 				767AA5CA2127E43F0069FBA4 /* CloudKit.framework in Frameworks */,
+				2AA28CA3A6F860C1974DF0A2 /* Pods_APN_Messages_Demo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3783C7BDAAC4D852F0425543 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C9C3F0C01A1937F57EABE58E /* Pods-APN-Messages-Demo.debug.xcconfig */,
+				BDE2080E372E10F4F335FDF7 /* Pods-APN-Messages-Demo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		767AA5A92127E3830069FBA4 = {
 			isa = PBXGroup;
 			children = (
 				767AA5B42127E3830069FBA4 /* APN-Messages-Demo */,
 				767AA5B32127E3830069FBA4 /* Products */,
 				767AA5C82127E43F0069FBA4 /* Frameworks */,
+				3783C7BDAAC4D852F0425543 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,6 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				767AA5C92127E43F0069FBA4 /* CloudKit.framework */,
+				A2370C4A558FFB9D279F37B5 /* Pods_APN_Messages_Demo.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -88,9 +104,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 767AA5C42127E3840069FBA4 /* Build configuration list for PBXNativeTarget "APN-Messages-Demo" */;
 			buildPhases = (
+				64717837663B3159B0C66DE0 /* [CP] Check Pods Manifest.lock */,
 				767AA5AE2127E3830069FBA4 /* Sources */,
 				767AA5AF2127E3830069FBA4 /* Frameworks */,
 				767AA5B02127E3830069FBA4 /* Resources */,
+				F39720E9111A11C7F4E7289F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -158,6 +176,77 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		64717837663B3159B0C66DE0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-APN-Messages-Demo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F39720E9111A11C7F4E7289F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-APN-Messages-Demo/Pods-APN-Messages-Demo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/GHBigNum/GHBigNum.framework",
+				"${BUILT_PRODUCTS_DIR}/GHKit/GHKit.framework",
+				"${BUILT_PRODUCTS_DIR}/GHODictionary/GHODictionary.framework",
+				"${BUILT_PRODUCTS_DIR}/KBKeybase/KBKeybase.framework",
+				"${BUILT_PRODUCTS_DIR}/KBPGP/KBPGP.framework",
+				"${BUILT_PRODUCTS_DIR}/MPMessagePack/MPMessagePack.framework",
+				"${BUILT_PRODUCTS_DIR}/Mantle/Mantle.framework",
+				"${BUILT_PRODUCTS_DIR}/NAChloride/NAChloride.framework",
+				"${BUILT_PRODUCTS_DIR}/NACrypto/NACrypto.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectiveSugar/ObjectiveSugar.framework",
+				"${BUILT_PRODUCTS_DIR}/TSTripleSec/TSTripleSec.framework",
+				"${BUILT_PRODUCTS_DIR}/libsodium/libsodium.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GHBigNum.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GHKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GHODictionary.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KBKeybase.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KBPGP.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MPMessagePack.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Mantle.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NAChloride.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NACrypto.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectiveSugar.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TSTripleSec.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/libsodium.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-APN-Messages-Demo/Pods-APN-Messages-Demo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		767AA5AE2127E3830069FBA4 /* Sources */ = {
@@ -308,6 +397,7 @@
 		};
 		767AA5C52127E3840069FBA4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C9C3F0C01A1937F57EABE58E /* Pods-APN-Messages-Demo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "APN-Messages-Demo/APN-Messages-Demo.entitlements";
@@ -328,6 +418,7 @@
 		};
 		767AA5C62127E3840069FBA4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BDE2080E372E10F4F335FDF7 /* Pods-APN-Messages-Demo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "APN-Messages-Demo/APN-Messages-Demo.entitlements";

@@ -1,0 +1,6 @@
+framework module NACrypto {
+  umbrella header "NACrypto-umbrella.h"
+
+  export *
+  module * { export * }
+}

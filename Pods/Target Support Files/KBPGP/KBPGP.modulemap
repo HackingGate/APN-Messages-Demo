@@ -1,0 +1,6 @@
+framework module KBPGP {
+  umbrella header "KBPGP-umbrella.h"
+
+  export *
+  module * { export * }
+}

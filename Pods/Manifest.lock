@@ -1,0 +1,103 @@
+PODS:
+  - AFNetworking (3.2.1):
+    - AFNetworking/NSURLSession (= 3.2.1)
+    - AFNetworking/Reachability (= 3.2.1)
+    - AFNetworking/Security (= 3.2.1)
+    - AFNetworking/Serialization (= 3.2.1)
+    - AFNetworking/UIKit (= 3.2.1)
+  - AFNetworking/NSURLSession (3.2.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.2.1)
+  - AFNetworking/Security (3.2.1)
+  - AFNetworking/Serialization (3.2.1)
+  - AFNetworking/UIKit (3.2.1):
+    - AFNetworking/NSURLSession
+  - GHBigNum (0.1.7):
+    - OpenSSL-Universal (~> 1.0.1k)
+  - GHKit (2.0.3)
+  - GHODictionary (1.1.0)
+  - KBKeybase/Core (0.1.15):
+    - AFNetworking
+    - GHKit
+    - Mantle
+    - NAChloride
+    - NACrypto
+    - ObjectiveSugar
+    - TSTripleSec
+  - KBPGP (0.1.4):
+    - GHBigNum
+    - GHKit
+    - KBKeybase/Core
+    - Mantle
+    - NAChloride
+    - ObjectiveSugar
+    - TSTripleSec
+  - libsodium (1.0.12)
+  - Mantle (2.1.0):
+    - Mantle/extobjc (= 2.1.0)
+  - Mantle/extobjc (2.1.0)
+  - MPMessagePack (1.4.5):
+    - GHODictionary
+  - NAChloride (2.3.0):
+    - libsodium
+  - NACrypto (1.1.0)
+  - ObjectiveSugar (1.1.0)
+  - OpenSSL-Universal (1.0.2.14)
+  - TSTripleSec (1.0.10):
+    - GHODictionary
+    - MPMessagePack
+    - NAChloride
+    - NACrypto
+
+DEPENDENCIES:
+  - KBPGP
+  - OpenSSL-Universal (from `https://github.com/krzyzanowskim/OpenSSL.git`, branch `master`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - AFNetworking
+    - GHBigNum
+    - GHKit
+    - GHODictionary
+    - KBKeybase
+    - libsodium
+    - Mantle
+    - MPMessagePack
+    - NAChloride
+    - ObjectiveSugar
+  https://github.com/hackinggate/Specs.git:
+    - KBPGP
+    - NACrypto
+    - TSTripleSec
+
+EXTERNAL SOURCES:
+  OpenSSL-Universal:
+    :branch: :master
+    :git: https://github.com/krzyzanowskim/OpenSSL.git
+
+CHECKOUT OPTIONS:
+  OpenSSL-Universal:
+    :commit: ed6dc693f2fdacc37cd7eee3d58b017f3a56796a
+    :git: https://github.com/krzyzanowskim/OpenSSL.git
+
+SPEC CHECKSUMS:
+  AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
+  GHBigNum: c2d93343859aa9b7e19efed420917302a6ea454d
+  GHKit: 2a20b51df9ce8f4355b2af2821805d369d610546
+  GHODictionary: 225e042596a4b3d5b66b2b24250086b2f95514af
+  KBKeybase: 90b75e2056a1a895b941a99cc37ee23d33bfa6a2
+  KBPGP: 0f71b65ada0fd4a49eba1db882c9b73c8ef7c833
+  libsodium: 9a8faa5ef2fa0d2d57bd7f7d79bf8fb7c1a9f0ea
+  Mantle: 2fa750afa478cd625a94230fbf1c13462f29395b
+  MPMessagePack: 5251dcd15e0c626cc50c192bdfcb5af6004cedb4
+  NAChloride: e290c884034a2be2c43f31dec1097ad3152d982a
+  NACrypto: fefe6bcdb163bbc9311198d2512653156963eabc
+  ObjectiveSugar: a6a25f23d657c19df0a0b972466d5b5ca9f5295c
+  OpenSSL-Universal: 60db51d46fdf2af071f141d9c4fec5430276d3ed
+  TSTripleSec: 0931b805048f46801ecd19a89e364c11e407b0ac
+
+PODFILE CHECKSUM: efcb57904183e7f1ec7b7b8e94e8e56bddae2ebd
+
+COCOAPODS: 1.5.3

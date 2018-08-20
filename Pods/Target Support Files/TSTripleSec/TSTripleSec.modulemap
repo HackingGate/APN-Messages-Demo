@@ -1,0 +1,6 @@
+framework module TSTripleSec {
+  umbrella header "TSTripleSec-umbrella.h"
+
+  export *
+  module * { export * }
+}
