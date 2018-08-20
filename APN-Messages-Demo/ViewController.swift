@@ -11,6 +11,7 @@ import CloudKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var fingerprintField: UITextField!
     @IBOutlet weak var textField: UITextField!
     
     let publicCloudDatabase = CKContainer.default().publicCloudDatabase
@@ -42,6 +43,7 @@ class ViewController: UIViewController {
 
     @IBAction func sendAction(_ sender: UIButton) {
         let newGlobalNotificationRecord = CKRecord(recordType: GlobalNotificationType)
+        newGlobalNotificationRecord["fingerprintTo"] = fingerprintField.text
         newGlobalNotificationRecord["messageBlock"] = textField.text
         self.publicCloudDatabase.save(newGlobalNotificationRecord, completionHandler: { (record: CKRecord?, error: Error?) in
             if let error = error {

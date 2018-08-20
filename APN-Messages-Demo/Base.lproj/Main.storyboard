@@ -19,30 +19,40 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KsZ-CB-TgY">
-                                <rect key="frame" x="16" y="120" width="343" height="30"/>
+                                <rect key="frame" x="16" y="190" width="343" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="81K-Fm-wP5">
-                                <rect key="frame" x="169.5" y="230" width="36" height="30"/>
-                                <state key="normal" title="Send"/>
+                                <rect key="frame" x="137" y="260" width="101" height="30"/>
+                                <state key="normal" title="Send Message"/>
                                 <connections>
                                     <action selector="sendAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZZA-se-utR"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1OX-Y2-U4w">
+                                <rect key="frame" x="16" y="120" width="343" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="1OX-Y2-U4w" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="4WF-gm-Khw"/>
                             <constraint firstItem="81K-Fm-wP5" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="9RT-TF-9eM"/>
+                            <constraint firstItem="KsZ-CB-TgY" firstAttribute="top" secondItem="1OX-Y2-U4w" secondAttribute="bottom" constant="40" id="Bhw-da-eoq"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="1OX-Y2-U4w" secondAttribute="trailing" constant="16" id="Hi4-Da-gs7"/>
+                            <constraint firstItem="1OX-Y2-U4w" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="Xtk-ca-OoW"/>
                             <constraint firstItem="KsZ-CB-TgY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="eZF-0t-HEU"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="KsZ-CB-TgY" secondAttribute="trailing" constant="16" id="g67-hE-Hnb"/>
-                            <constraint firstItem="KsZ-CB-TgY" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="jxW-YR-hBo"/>
-                            <constraint firstItem="81K-Fm-wP5" firstAttribute="top" secondItem="KsZ-CB-TgY" secondAttribute="bottom" constant="80" id="nhK-ms-8IK"/>
+                            <constraint firstItem="81K-Fm-wP5" firstAttribute="top" secondItem="KsZ-CB-TgY" secondAttribute="bottom" constant="40" id="nhK-ms-8IK"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="fingerprintField" destination="1OX-Y2-U4w" id="Jil-Dc-aqh"/>
                         <outlet property="textField" destination="KsZ-CB-TgY" id="NZT-YX-OGa"/>
                     </connections>
                 </viewController>
