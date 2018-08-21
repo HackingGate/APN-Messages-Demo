@@ -46,7 +46,7 @@ extension AppDelegate: UNUserNotificationCenterDelegate {
         let token = deviceToken.map { String(format: "%02.2hhx", $0) }.joined()
         print("deviceToken: \(token)")
         
-        let fingerprint = ""
+        let fingerprint = "hackinggate"
         let predicate = NSPredicate(format: "%K == %@", argumentArray: ["fingerprintTo", fingerprint])
         let subscription = CKQuerySubscription(recordType: GlobalNotificationType, predicate: predicate, options: .firesOnRecordCreation)
         

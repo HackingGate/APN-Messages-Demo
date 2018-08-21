@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1666FBB26CBD89A3CC113DA9 /* libPods-APN-Messages-Demo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 45F245583D6BD81633395DEF /* libPods-APN-Messages-Demo.a */; };
 		767AA5B62127E3830069FBA4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767AA5B52127E3830069FBA4 /* AppDelegate.swift */; };
 		767AA5B82127E3830069FBA4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767AA5B72127E3830069FBA4 /* ViewController.swift */; };
 		767AA5BB2127E3830069FBA4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 767AA5B92127E3830069FBA4 /* Main.storyboard */; };
@@ -17,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		417236B8C87329DF9FD8E484 /* Pods-APN-Messages-Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-APN-Messages-Demo.release.xcconfig"; path = "Pods/Target Support Files/Pods-APN-Messages-Demo/Pods-APN-Messages-Demo.release.xcconfig"; sourceTree = "<group>"; };
+		45F245583D6BD81633395DEF /* libPods-APN-Messages-Demo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-APN-Messages-Demo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		767AA5B22127E3830069FBA4 /* APN-Messages-Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "APN-Messages-Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		767AA5B52127E3830069FBA4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		767AA5B72127E3830069FBA4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -27,6 +30,7 @@
 		767AA5C72127E3CA0069FBA4 /* APN-Messages-Demo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "APN-Messages-Demo.entitlements"; sourceTree = "<group>"; };
 		767AA5C92127E43F0069FBA4 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		769A49C52127E5B200D3BA11 /* APNExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APNExtension.swift; sourceTree = "<group>"; };
+		DCF8C0252A1284EBA9B2A24B /* Pods-APN-Messages-Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-APN-Messages-Demo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-APN-Messages-Demo/Pods-APN-Messages-Demo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,18 +39,29 @@
 			buildActionMask = 2147483647;
 			files = (
 				767AA5CA2127E43F0069FBA4 /* CloudKit.framework in Frameworks */,
+				1666FBB26CBD89A3CC113DA9 /* libPods-APN-Messages-Demo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		60170BA951DBED326A42E421 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DCF8C0252A1284EBA9B2A24B /* Pods-APN-Messages-Demo.debug.xcconfig */,
+				417236B8C87329DF9FD8E484 /* Pods-APN-Messages-Demo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		767AA5A92127E3830069FBA4 = {
 			isa = PBXGroup;
 			children = (
 				767AA5B42127E3830069FBA4 /* APN-Messages-Demo */,
 				767AA5B32127E3830069FBA4 /* Products */,
 				767AA5C82127E43F0069FBA4 /* Frameworks */,
+				60170BA951DBED326A42E421 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,6 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				767AA5C92127E43F0069FBA4 /* CloudKit.framework */,
+				45F245583D6BD81633395DEF /* libPods-APN-Messages-Demo.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -88,6 +104,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 767AA5C42127E3840069FBA4 /* Build configuration list for PBXNativeTarget "APN-Messages-Demo" */;
 			buildPhases = (
+				FD7E55A85004DA81D8951A6F /* [CP] Check Pods Manifest.lock */,
 				767AA5AE2127E3830069FBA4 /* Sources */,
 				767AA5AF2127E3830069FBA4 /* Frameworks */,
 				767AA5B02127E3830069FBA4 /* Resources */,
@@ -158,6 +175,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		FD7E55A85004DA81D8951A6F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-APN-Messages-Demo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		767AA5AE2127E3830069FBA4 /* Sources */ = {
@@ -308,6 +350,7 @@
 		};
 		767AA5C52127E3840069FBA4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DCF8C0252A1284EBA9B2A24B /* Pods-APN-Messages-Demo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "APN-Messages-Demo/APN-Messages-Demo.entitlements";
@@ -328,6 +371,7 @@
 		};
 		767AA5C62127E3840069FBA4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 417236B8C87329DF9FD8E484 /* Pods-APN-Messages-Demo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "APN-Messages-Demo/APN-Messages-Demo.entitlements";
